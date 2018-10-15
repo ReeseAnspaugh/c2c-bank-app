@@ -10,6 +10,10 @@ login_types = ["admin", "user", "guest"]
 def gatekeeper(login):
   if login == "admin":
     return "You have the privileges"
+if login == "user":
+    return "You have limited provileges."
+if login == "guest":
+    return "You have no privileges."
 
 # 3. Call the gatekeeper function with a string and print what it returns.
 print(gatekeeper("admin"))
